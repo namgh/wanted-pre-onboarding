@@ -17,7 +17,7 @@ services:
     platform: linux/x86_64
     image: mysql:latest
     environment:
-      MYSQL_DATABASE: 'toyproject'
+      MYSQL_DATABASE: 'wanted'
       MYSQL_ROOT_PASSWORD: 'root'
     command:
       - --character-set-server=utf8mb4
