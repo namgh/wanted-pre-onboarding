@@ -8,10 +8,12 @@ import * as redisStore from 'cache-manager-redis-store';
 import { MongooseModule } from '@nestjs/mongoose';
 import { CompanyModule } from './apis/company/company.module';
 import { JobPostingModule } from './apis/jobPosting/jobPosting.module';
+import { UserModule } from './apis/user/user.module';
 @Module({
   imports: [
     CompanyModule,
     JobPostingModule,
+    UserModule,
     ConfigModule.forRoot({ isGlobal: true }), //
 
     TypeOrmModule.forRoot({

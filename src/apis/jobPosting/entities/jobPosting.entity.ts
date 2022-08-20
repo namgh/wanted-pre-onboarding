@@ -6,8 +6,8 @@ export class JobPosting {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @ManyToOne(() => Company)
-  companyId: Company;
+  @ManyToOne(() => Company, (company) => company.jobPosting)
+  company: Company;
 
   @Column()
   position: string;

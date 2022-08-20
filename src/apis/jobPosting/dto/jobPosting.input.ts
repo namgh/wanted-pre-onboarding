@@ -6,7 +6,8 @@ export class JobPostingInput {
     description: '회사_ID',
     default: '',
   })
-  readonly companyId: string;
+  readonly company: string;
+
   @ApiProperty({
     type: String,
     description: '채용포지션',
