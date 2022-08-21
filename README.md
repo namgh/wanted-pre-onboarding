@@ -1,6 +1,11 @@
 nodejs 프레임워크인 nestjs와 restapi로 서버를 구현하였습니다.
 database 는 mysql 를 사용하였고, orm은 typeorm을 사용하였습니다.
-swagger를 만들어서 변수값 입력을 편리하게 만들었습니다. (url: localhost:3000/api-docs)
+
+env 파일까지 올렸습니다.
+
+서버 실행시키는 방법은 docker compose build 후에 docker compose up 하시면 됩니다.
+
+swagger 서버 url입니다. (url: localhost:3000/api-docs)
 
 # 요구사항 분석
 
